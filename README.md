@@ -4,6 +4,8 @@ A single-page marketing/lead-capture site for "Sterling & Vale Advisory," a fict
 
 **Live site:** https://chiawtzeetan.github.io/claudetest/
 
+![Screenshot of the Sterling & Vale Advisory homepage](assets/screenshot.png)
+
 ## Running locally
 
 Open `index.html` directly in a browser (double-click, or `open index.html` on macOS) — no local server is required.
