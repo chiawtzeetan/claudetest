@@ -148,11 +148,10 @@ form.addEventListener('submit', async (e) => {
   submitBtn.textContent = 'Sending…';
 
   try {
-    // REPLACE_WITH_YOUR_EMAIL — swap in your real address below before going live.
-    // FormSubmit requires a one-time activation: the first submission to a new
+    // FormSubmit requires a one-time activation: the first submission to this
     // address triggers a confirmation email; click the link there before the
     // form will deliver any further submissions.
-    const response = await fetch('https://formsubmit.co/ajax/REPLACE_WITH_YOUR_EMAIL', {
+    const response = await fetch('https://formsubmit.co/ajax/chiawtzee.tan@gmail.com', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

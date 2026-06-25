@@ -1,12 +1,12 @@
 :root {
-  --navy: #0f1f33;
-  --navy-light: #1b3354;
-  --gold: #b8975c;
-  --gold-light: #d4b886;
-  --offwhite: #faf8f4;
-  --ink: #1c1c1c;
-  --muted: #5c6470;
-  --border: #e3ddd2;
+  --navy: #0c4a6e;
+  --navy-light: #0369a1;
+  --gold: #c79a3e;
+  --gold-light: #e3c873;
+  --offwhite: #f5fafe;
+  --ink: #15222c;
+  --muted: #56707f;
+  --border: #d9e8f0;
 
   --font-heading: 'Playfair Display', serif;
   --font-body: 'Inter', sans-serif;
@@ -18,7 +18,7 @@
   --space-xl: 6rem;
 
   --radius: 8px;
-  --shadow: 0 10px 30px rgba(15, 31, 51, 0.08);
+  --shadow: 0 10px 30px rgba(12, 74, 110, 0.1);
 }
 
 * { box-sizing: border-box; }
@@ -90,7 +90,7 @@ img, svg { max-width: 100%; display: block; }
 }
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(184, 151, 92, 0.35);
+  box-shadow: 0 8px 20px rgba(199, 154, 62, 0.35);
 }
 .btn-primary:disabled {
   opacity: 0.6;
@@ -103,7 +103,7 @@ img, svg { max-width: 100%; display: block; }
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(15, 31, 51, 0.96);
+  background: rgba(12, 74, 110, 0.96);
   backdrop-filter: blur(6px);
 }
 
@@ -170,7 +170,7 @@ img, svg { max-width: 100%; display: block; }
   justify-content: center;
   text-align: center;
   padding: var(--space-lg) var(--space-md);
-  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 55%, #24456f 100%);
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 55%, #38bdf8 100%);
   color: #fff;
 }
 
@@ -185,7 +185,7 @@ img, svg { max-width: 100%; display: block; }
 }
 
 .hero-sub {
-  color: #c9d2de;
+  color: #cfe8fb;
   font-size: 1.1rem;
   margin: var(--space-sm) 0 var(--space-md);
 }
@@ -212,7 +212,7 @@ img, svg { max-width: 100%; display: block; }
 }
 
 .stat-label {
-  color: #c9d2de;
+  color: #cfe8fb;
   font-size: 0.85rem;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -260,7 +260,7 @@ img, svg { max-width: 100%; display: block; }
   color: #fff;
 }
 .testimonials .section-sub {
-  color: #c9d2de;
+  color: #cfe8fb;
 }
 
 .carousel {
@@ -357,6 +357,68 @@ img, svg { max-width: 100%; display: block; }
   background: var(--gold-light);
 }
 
+/* Contact / lead magnet */
+.contact-inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  align-items: start;
+}
+
+.contact-pitch {
+  background: linear-gradient(150deg, var(--navy) 0%, var(--navy-light) 100%);
+  color: #fff;
+  border-radius: var(--radius);
+  padding: var(--space-lg) var(--space-md);
+  box-shadow: var(--shadow);
+}
+
+.contact-pitch h2 {
+  color: #fff;
+  margin-top: var(--space-xs);
+}
+
+.contact-pitch .section-sub {
+  color: #cfe8fb;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin: var(--space-md) 0;
+}
+
+.benefits-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: 0.97rem;
+  color: #f1ecf8;
+}
+
+.benefits-list svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  color: var(--gold-light);
+  margin-top: 0.1rem;
+}
+
+.pitch-note {
+  font-size: 0.88rem;
+  color: #cfe8fb;
+}
+
 /* Contact form */
 .enquiry-form {
   display: grid;
@@ -446,7 +508,7 @@ textarea {
 /* Footer */
 .site-footer {
   background: var(--navy);
-  color: #c9d2de;
+  color: #cfe8fb;
   padding: var(--space-lg) var(--space-md) var(--space-md);
 }
 
@@ -464,7 +526,7 @@ textarea {
 .footer-brand p {
   margin-top: 0.4rem;
   font-size: 0.9rem;
-  color: #9aa6b5;
+  color: #8fb3c7;
 }
 
 .footer-links {
@@ -474,7 +536,7 @@ textarea {
 }
 .footer-links a {
   font-size: 0.9rem;
-  color: #c9d2de;
+  color: #cfe8fb;
   transition: color 0.2s ease;
 }
 .footer-links a:hover {
@@ -485,14 +547,14 @@ textarea {
   max-width: 1100px;
   margin: var(--space-md) auto 0;
   font-size: 0.8rem;
-  color: #8993a3;
+  color: #7b9aae;
 }
 
 .footer-copy {
   max-width: 1100px;
   margin: 0.5rem auto 0;
   font-size: 0.8rem;
-  color: #8993a3;
+  color: #7b9aae;
 }
 
 /* Tablet */
@@ -509,6 +571,10 @@ textarea {
 
   .testimonial-card blockquote {
     font-size: 1.15rem;
+  }
+
+  .contact-inner {
+    grid-template-columns: 0.9fr 1.1fr;
   }
 }
 

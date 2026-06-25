@@ -4,7 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sterling & Vale Advisory | Wealth Management</title>
-<meta name="description" content="Sterling & Vale Advisory helps professionals and families grow and protect their wealth through disciplined, long-term financial planning.">
+<meta name="description" content="Claim a free wealth strategy session with Sterling & Vale Advisory. Disciplined, personalized financial planning for professionals and families.">
+<link rel="canonical" href="https://chiawtzeetan.github.io/claudetest/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sterling & Vale Advisory | Wealth Management">
+<meta property="og:description" content="Claim a free wealth strategy session with Sterling & Vale Advisory. Disciplined, personalized financial planning for professionals and families.">
+<meta property="og:url" content="https://chiawtzeetan.github.io/claudetest/">
+<meta property="og:image" content="https://chiawtzeetan.github.io/claudetest/assets/screenshot.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sterling & Vale Advisory | Wealth Management">
+<meta name="twitter:description" content="Claim a free wealth strategy session with Sterling & Vale Advisory. Disciplined, personalized financial planning for professionals and families.">
+<meta name="twitter:image" content="https://chiawtzeetan.github.io/claudetest/assets/screenshot.png">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -35,7 +48,7 @@
     <div class="hero-content">
       <h1>Grow and protect what matters</h1>
       <p class="hero-sub">Disciplined, personalized wealth management for professionals and families building a lasting legacy.</p>
-      <a href="#contact" class="btn btn-primary cta-scroll">Book a Consultation</a>
+      <a href="#contact" class="btn btn-primary cta-scroll">Claim Your Free Strategy Session</a>
     </div>
     <div class="trust-stats fade-in">
       <div class="stat">
@@ -144,63 +157,76 @@
   </section>
 
   <section id="contact" class="contact">
-    <div class="section-inner">
-      <h2 class="fade-in">Book a Consultation</h2>
-      <p class="section-sub fade-in">Tell us a little about your goals and we'll be in touch within one business day.</p>
+    <div class="section-inner contact-inner">
 
-      <form id="enquiryForm" class="enquiry-form fade-in" novalidate>
-
-        <div class="form-row">
-          <label for="fullName">Full Name <span aria-hidden="true">*</span></label>
-          <input type="text" id="fullName" name="fullName" autocomplete="name" required>
-          <span class="field-error" id="fullNameError"></span>
-        </div>
-
-        <div class="form-row">
-          <label for="email">Email <span aria-hidden="true">*</span></label>
-          <input type="email" id="email" name="email" autocomplete="email" required>
-          <span class="field-error" id="emailError"></span>
-        </div>
-
-        <div class="form-row">
-          <label for="phone">Phone</label>
-          <input type="tel" id="phone" name="phone" autocomplete="tel">
-        </div>
-
-        <div class="form-row">
-          <label for="interest">Investment Interest</label>
-          <select id="interest" name="interest">
-            <option value="Wealth Planning">Wealth Planning</option>
-            <option value="Retirement">Retirement</option>
-            <option value="Portfolio Management">Portfolio Management</option>
-            <option value="Estate Planning">Estate Planning</option>
-            <option value="Other">Other</option>
-          </select>
-        </div>
-
-        <div class="form-row form-row-full">
-          <label for="message">Message <span aria-hidden="true">*</span></label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-          <span class="field-error" id="messageError"></span>
-        </div>
-
-        <!-- Honeypot field for spam reduction; kept empty and hidden -->
-        <div class="honey-field" aria-hidden="true">
-          <label for="_honey">Leave this field empty</label>
-          <input type="text" id="_honey" name="_honey" tabindex="-1" autocomplete="off">
-        </div>
-
-        <div class="form-row form-row-full">
-          <button type="submit" class="btn btn-primary" id="submitBtn">Send Enquiry</button>
-        </div>
-
-        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
-      </form>
-
-      <div class="form-success" id="formSuccess" hidden role="status">
-        <h3>Thank you</h3>
-        <p>Thanks — we'll be in touch within one business day.</p>
+      <div class="contact-pitch fade-in">
+        <span class="eyebrow">Limited Availability This Quarter</span>
+        <h2>Claim Your Free Wealth Strategy Session</h2>
+        <p class="section-sub">A complimentary, no-obligation 30-minute call to map a plan around your goals — the same process we use with clients managing $500K+ in assets.</p>
+        <ul class="benefits-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg> A personalized wealth roadmap built around your timeline</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg> Tax-aware strategies most advisors overlook</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg> An honest second opinion on your current portfolio</li>
+        </ul>
+        <p class="pitch-note">We onboard a small number of new clients each quarter — reserve your session today before spots fill.</p>
       </div>
+
+      <div class="contact-form-wrap">
+        <form id="enquiryForm" class="enquiry-form fade-in" novalidate>
+
+          <div class="form-row">
+            <label for="fullName">Full Name <span aria-hidden="true">*</span></label>
+            <input type="text" id="fullName" name="fullName" autocomplete="name" required>
+            <span class="field-error" id="fullNameError"></span>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email <span aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+            <span class="field-error" id="emailError"></span>
+          </div>
+
+          <div class="form-row">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel">
+          </div>
+
+          <div class="form-row">
+            <label for="interest">Investment Interest</label>
+            <select id="interest" name="interest">
+              <option value="Wealth Planning">Wealth Planning</option>
+              <option value="Retirement">Retirement</option>
+              <option value="Portfolio Management">Portfolio Management</option>
+              <option value="Estate Planning">Estate Planning</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-row form-row-full">
+            <label for="message">Message <span aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <span class="field-error" id="messageError"></span>
+          </div>
+
+          <!-- Honeypot field for spam reduction; kept empty and hidden -->
+          <div class="honey-field" aria-hidden="true">
+            <label for="_honey">Leave this field empty</label>
+            <input type="text" id="_honey" name="_honey" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="form-row form-row-full">
+            <button type="submit" class="btn btn-primary" id="submitBtn">Claim My Free Session</button>
+          </div>
+
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="form-success" id="formSuccess" hidden role="status">
+          <h3>Thank you</h3>
+          <p>Thanks — we'll be in touch within one business day to schedule your free session.</p>
+        </div>
+      </div>
+
     </div>
   </section>
 
