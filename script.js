@@ -164,6 +164,7 @@ form.addEventListener('submit', async (e) => {
 
     form.hidden = true;
     formSuccess.hidden = false;
+    celebrateSubmission();
   } catch (err) {
     formStatus.textContent = 'Something went wrong sending your message. Please try again or email us directly.';
     formStatus.classList.add('error');
@@ -171,6 +172,40 @@ form.addEventListener('submit', async (e) => {
     submitBtn.textContent = 'Send Enquiry';
   }
 });
+
+// ---------- Post-submission celebration (voice + balloons) ----------
+const BALLOON_COLORS = ['#c79a3e', '#e3c873', '#0369a1', '#0c4a6e', '#f5fafe'];
+
+function speakSuccessMessage() {
+  if (!('speechSynthesis' in window)) return;
+  const utterance = new SpeechSynthesisUtterance(
+    'Hurray, thank you for your submission, we will get back to you in 1 business day.'
+  );
+  window.speechSynthesis.speak(utterance);
+}
+
+function launchBalloons(count = 12) {
+  const container = document.createElement('div');
+  container.className = 'balloon-container';
+  document.body.appendChild(container);
+
+  for (let i = 0; i < count; i++) {
+    const balloon = document.createElement('div');
+    balloon.className = 'balloon';
+    balloon.style.left = `${Math.random() * 100}%`;
+    balloon.style.background = BALLOON_COLORS[i % BALLOON_COLORS.length];
+    balloon.style.animationDelay = `${Math.random() * 0.6}s`;
+    balloon.style.animationDuration = `${3.5 + Math.random() * 1.5}s`;
+    container.appendChild(balloon);
+  }
+
+  setTimeout(() => container.remove(), 6000);
+}
+
+function celebrateSubmission() {
+  speakSuccessMessage();
+  launchBalloons();
+}
 
 // ---------- WhatsApp floating widget ----------
 const WHATSAPP_NUMBER = '6591117666';

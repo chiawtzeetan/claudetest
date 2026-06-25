@@ -798,3 +798,46 @@ textarea {
     margin-bottom: 0.25rem;
   }
 }
+
+/* ---------- Post-submission balloon celebration ---------- */
+.balloon-container {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1100;
+  overflow: hidden;
+}
+
+.balloon {
+  position: absolute;
+  bottom: -120px;
+  width: 36px;
+  height: 46px;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  opacity: 0.9;
+  animation: balloon-rise 4s ease-in forwards;
+}
+.balloon::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -14px;
+  width: 1px;
+  height: 14px;
+  background: rgba(21, 34, 44, 0.3);
+}
+
+@keyframes balloon-rise {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+    opacity: 0.95;
+  }
+  100% {
+    transform: translateY(-110vh) translateX(20px) rotate(8deg);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .balloon { animation: none; display: none; }
+}
