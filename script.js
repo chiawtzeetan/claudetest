@@ -151,7 +151,7 @@ form.addEventListener('submit', async (e) => {
     // FormSubmit requires a one-time activation: the first submission to this
     // address triggers a confirmation email; click the link there before the
     // form will deliver any further submissions.
-    const response = await fetch('https://formsubmit.co/ajax/chiawtzee.tan@gmail.com', {
+    const response = await fetch('https://formsubmit.co/ajax/chiawtzee.tan@redbeaconam.com', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -170,4 +170,41 @@ form.addEventListener('submit', async (e) => {
     submitBtn.disabled = false;
     submitBtn.textContent = 'Send Enquiry';
   }
+});
+
+// ---------- WhatsApp floating widget ----------
+const WHATSAPP_NUMBER = '6591117666';
+
+const waToggle = document.getElementById('whatsappToggle');
+const waPanel = document.getElementById('whatsappPanel');
+const waClose = document.getElementById('whatsappClose');
+const waCta = document.getElementById('whatsappCta');
+const waSuggestions = document.getElementById('whatsappSuggestions');
+
+function openWhatsapp(message) {
+  const base = `https://wa.me/${WHATSAPP_NUMBER}`;
+  const url = message ? `${base}?text=${encodeURIComponent(message)}` : base;
+  window.open(url, '_blank', 'noopener');
+}
+
+waToggle.addEventListener('click', () => {
+  const isOpen = waPanel.hidden;
+  waPanel.hidden = !isOpen;
+  waToggle.setAttribute('aria-expanded', isOpen);
+});
+
+waClose.addEventListener('click', () => {
+  waPanel.hidden = true;
+  waToggle.setAttribute('aria-expanded', false);
+});
+
+waSuggestions.addEventListener('click', (e) => {
+  const btn = e.target.closest('.whatsapp-suggestion');
+  if (!btn) return;
+  openWhatsapp(btn.dataset.msg);
+});
+
+waCta.addEventListener('click', (e) => {
+  e.preventDefault();
+  openWhatsapp("Hi, I'd like to find out more about Sterling & Vale Advisory.");
 });

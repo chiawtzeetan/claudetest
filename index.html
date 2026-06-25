@@ -244,10 +244,71 @@
       <li><a href="#testimonials">Testimonials</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+    <ul class="footer-social">
+      <li>
+        <a href="REPLACE_WITH_YOUR_LINKEDIN_URL" target="_blank" rel="noopener noreferrer" aria-label="Visit our LinkedIn page">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6.5 9 V19 M6.5 5.5 v.01"/>
+            <path d="M11 19 V9 M11 13 c0-2.2 1.6-4 3.75-4 S18.5 10.8 18.5 13 v6"/>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="REPLACE_WITH_YOUR_FACEBOOK_URL" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M15 8 h2 V5 h-2 c-2 0-3.5 1.5-3.5 3.5 V11 H9.5 v3 H11.5 V20 h3 V14 h2.2 l.8-3 H14.5 V8.7 c0-.5.2-.7.7-.7 Z"/>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="REPLACE_WITH_YOUR_INSTAGRAM_URL" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram page">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="4" y="4" width="16" height="16" rx="4"/>
+            <circle cx="12" cy="12" r="3.5"/>
+            <path d="M16.5 7.5 v.01"/>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="REPLACE_WITH_YOUR_TWITTER_URL" target="_blank" rel="noopener noreferrer" aria-label="Visit our Twitter/X page">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 5 L19 19 M19 5 L5 19"/>
+          </svg>
+        </a>
+      </li>
+    </ul>
   </div>
   <p class="footer-disclaimer">This website is for informational purposes only and does not constitute financial advice.</p>
   <p class="footer-copy">&copy; <span id="year"></span> Sterling &amp; Vale Advisory. All rights reserved.</p>
 </footer>
+
+<div class="whatsapp-widget" id="whatsappWidget">
+  <div class="whatsapp-panel" id="whatsappPanel" hidden>
+    <div class="whatsapp-panel-header">
+      <span class="whatsapp-avatar" aria-hidden="true">SV</span>
+      <div>
+        <strong>Sterling &amp; Vale Advisory</strong>
+        <span class="whatsapp-status">Typically replies within an hour</span>
+      </div>
+      <button class="whatsapp-close" id="whatsappClose" aria-label="Close chat">&times;</button>
+    </div>
+    <div class="whatsapp-panel-body">
+      <p class="whatsapp-greeting">Hi there 👋 How can we help you today? Tap a question below or write your own to start a WhatsApp chat.</p>
+      <div class="whatsapp-suggestions" id="whatsappSuggestions">
+        <button class="whatsapp-suggestion" data-msg="I'd like to book a free wealth strategy session.">I'd like to book a free wealth strategy session</button>
+        <button class="whatsapp-suggestion" data-msg="What services does Sterling & Vale Advisory offer?">What services do you offer?</button>
+        <button class="whatsapp-suggestion" data-msg="What is the minimum portfolio size to become a client?">What's the minimum to become a client?</button>
+        <button class="whatsapp-suggestion" data-msg="Can someone call me back to discuss retirement planning?">Can someone call me back about retirement planning?</button>
+      </div>
+    </div>
+    <a class="whatsapp-cta" id="whatsappCta" href="https://wa.me/6591117666" target="_blank" rel="noopener">Start Chat on WhatsApp</a>
+  </div>
+  <button class="whatsapp-toggle" id="whatsappToggle" aria-label="Chat with us on WhatsApp" aria-expanded="false">
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+      <path fill="currentColor" d="M16.004 3C9.376 3 4 8.373 4 15c0 2.41.706 4.66 1.93 6.553L4 29l7.64-1.886A11.93 11.93 0 0 0 16.004 27C22.63 27 28 21.627 28 15S22.63 3 16.004 3zm6.563 16.94c-.277.78-1.61 1.49-2.222 1.58-.566.085-1.28.12-2.063-.13-.476-.153-1.087-.357-1.873-.7-3.296-1.424-5.45-4.733-5.616-4.957-.166-.224-1.353-1.8-1.353-3.434 0-1.633.857-2.434 1.16-2.77.305-.336.665-.42.886-.42.222 0 .443.002.637.012.205.01.48-.078.75.572.277.668.94 2.305 1.024 2.473.083.168.139.364.028.583-.11.22-.166.357-.332.55-.166.196-.35.437-.5.587-.166.166-.34.346-.146.683.193.336.86 1.42 1.846 2.3 1.27 1.133 2.34 1.49 2.682 1.657.34.166.54.14.74-.083.2-.224.86-.997 1.09-1.34.23-.34.46-.28.778-.168.318.11 2.02.952 2.366 1.126.346.174.576.26.66.405.084.146.084.84-.193 1.62z"/>
+    </svg>
+  </button>
+</div>
 
 <script src="script.js"></script>
 </body>
